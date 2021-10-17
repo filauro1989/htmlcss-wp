@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 1em auto;
+}
+
+/* header */
+.header {
+    background-color: violet;
+    height: 100px;
+}
+
+/* main */
+.jumbotron {
+    height: 400px;
+    margin: 1em 0;
+    background-color: yellow;
+}
+
+.main-container {
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.main-container-header{
+    height: 80px;
+    background-color: lightblue;
+    margin-bottom: 15px;
+}
+
+.col {
+    width: 25%;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+    margin-bottom: 15px;
+}
+.col-central {
+    width: calc(50% - 30px);
+    margin: 0 15px;
+}
+
+/* footer */
+.footer {
+    height: 50px;
+    background-color: purple;
+}
