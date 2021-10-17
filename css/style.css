@@ -47,7 +47,7 @@ body {
 }
 
 /* main */
-
+/* jumbotron */
 .jumbotron {
     height: 300px;
     background-image: url(../img/banner.jpg);
@@ -63,11 +63,13 @@ body {
     width: 50%;
     color: white;
 }
+/* /jumbotron */
 
 .main-container {
     margin-bottom: 10px;
 }
 
+/* main-container-header */
 .main-container-header{
     margin: 15px 0;
 }
@@ -77,17 +79,23 @@ body {
 .main-container-header h2 {
     color: black;
 }
+/* /main-container-header */
 
 .col {
     width: 25%;
-    height: 400px;
-    background-color: lightblue;
+    background-color: black;
     float: left;
     margin-bottom: 15px;
 }
 .col-central {
     width: calc(50% - 30px);
     margin: 0 15px;
+}
+
+.left-col-img {
+    opacity: 0.85;
+    width: 100%;
+    float: left;
 }
 
 /* footer */
