@@ -53,13 +53,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
-/* .jumbo-img {
-    height: auto;
-    width: 100%;
-    vertical-align: center;
-} */
+.jumbotron > h3,
+.jumbotron > h5 {
+    position: relative;
+    top: 60%;
+    left: 5%;
+    width: 50%;
+    color: white;
+}
 
 .main-container {
     background-color: blue;
