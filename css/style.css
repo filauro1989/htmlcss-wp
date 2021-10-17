@@ -17,9 +17,12 @@
 }
 
 /* header */
-.header {
+/* .header {
     background-color: violet;
-    height: 100px;
+    height: 3.5em;
+} */
+.header img {
+    height: 3em;
 }
 
 /* main */
