@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 100%;
+}
 
 body {
-    font-size: 100%;
     font-family: 'Roboto', sans-serif;
     color: lightgray;
     max-width: 1200px;
@@ -98,18 +100,20 @@ body {
 /* /main-container-header */
 
 .col {
-    width: 25%;
-    background-color: black;
+    width: 20%;
     float: left;
     margin-bottom: 15px;
 }
 .col-central {
-    width: calc(50% - 30px);
+    width: calc(60% - 30px);
     margin: 0 15px;
 }
 
 .left-col-img {
-    opacity: 0.85;
+    width: 100%;
+    float: left;
+}
+.central-col-img {
     width: 100%;
     float: left;
 }
