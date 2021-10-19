@@ -8,6 +8,8 @@ body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
     color: lightgray;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -17,6 +19,9 @@ body {
 }
 .border-radius {
     border-radius: 0.5em;
+}
+.white-text {
+    color: white;
 }
 
 .container {
@@ -47,27 +52,41 @@ body {
 }
 
 /* main */
+/* jumbotron */
 
 .jumbotron {
+    position: relative;
     height: 300px;
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
-.jumbotron > h3,
-.jumbotron > h5 {
-    position: relative;
-    top: 60%;
-    left: 5%;
+.jumbotron::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.jumbotron-text {
+    position: absolute;
+    bottom: 2.5em;
+    left: 1.5em;
     width: 50%;
-    color: white;
 }
+.jumbotron-text h5 {
+    font-weight: normal;
+}
+
+/* /jumbotron */
 
 .main-container {
     margin-bottom: 10px;
 }
 
+/* main-container-header */
 .main-container-header{
     margin: 15px 0;
 }
@@ -77,17 +96,23 @@ body {
 .main-container-header h2 {
     color: black;
 }
+/* /main-container-header */
 
 .col {
     width: 25%;
-    height: 400px;
-    background-color: lightblue;
+    background-color: black;
     float: left;
     margin-bottom: 15px;
 }
 .col-central {
     width: calc(50% - 30px);
     margin: 0 15px;
+}
+
+.left-col-img {
+    opacity: 0.85;
+    width: 100%;
+    float: left;
 }
 
 /* footer */
